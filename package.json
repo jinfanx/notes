@@ -1,0 +1,21 @@
+{
+  "scripts": {
+    "build": "gitbook install && gitbook build",
+    "deploy": "gh-pages -d _book"
+  },
+  "dependencies": {
+    "gitbook-plugin-anchor-navigation-ex": "^1.0.14",
+    "gitbook-plugin-anchors": "^0.7.1",
+    "gitbook-plugin-atoc": "^1.0.3",
+    "gitbook-plugin-back-to-top-button": "^0.1.4",
+    "gitbook-plugin-copy-code-button": "0.0.2",
+    "gitbook-plugin-donate": "^1.0.2",
+    "gitbook-plugin-expandable-chapters": "^0.2.0",
+    "gitbook-plugin-expandable-chapters-small": "^0.1.7",
+    "gitbook-plugin-favicon": "0.0.2",
+    "gitbook-plugin-github": "^2.0.0",
+    "gitbook-plugin-github-buttons": "^3.0.0",
+    "gitbook-plugin-sharing-plus": "0.0.2",
+    "gitbook-plugin-splitter": "0.0.8"
+  }
+}
