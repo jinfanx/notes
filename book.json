@@ -1,0 +1,71 @@
+{
+    "title": "编程笔记",
+    "author": "jinfanx",
+    "description": "一只程序狗的工作、学习笔记",
+    "language": "zh-hans",
+    "gitbook": "3.2.3",
+    "structure": {
+        "readme": "README.md"
+    },
+    "plugins": [
+        "-sharing",
+        "splitter",
+        "copy-code-button",
+        "expandable-chapters",
+        "expandable-chapters-small",
+        "atoc",
+        "anchors",
+        "github",
+        "github-buttons",
+        "donate",
+        "sharing-plus",
+        "anchor-navigation-ex",
+        "favicon",
+        "back-to-top-button"
+    ],
+    "pluginsConfig": {
+        "github": {
+            "url": "https://github.com/jinfanx/notes"
+        },
+        "donate": {
+            "wechat": "",
+            "alipay": "/resources/images/donate/alipay.jpg",
+            "title": " ",
+            "button": "Donate",
+            "alipayText": " ",
+            "wechatText": " "
+        },
+        "sharing": {
+            "douban": false,
+            "facebook": false,
+            "google": false,
+            "hatenaBookmark": false,
+            "instapaper": false,
+            "line": false,
+            "linkedin": false,
+            "messenger": false,
+            "pocket": false,
+            "qq": false,
+            "qzone": false,
+            "stumbleupon": false,
+            "twitter": false,
+            "viber": false,
+            "vk": false,
+            "weibo": false,
+            "whatsapp": false,
+            "all": [
+                "google",
+                "facebook",
+                "weibo",
+                "twitter",
+                "qq",
+                "qzone",
+                "linkedin",
+                "pocket"
+            ]
+        },
+        "anchor-navigation-ex": {
+            "showLevel": false
+        }
+    }
+}
