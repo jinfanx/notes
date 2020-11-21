@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>django · 编程笔记</title>
+        <title>zookeeper · 编程笔记</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -91,8 +91,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="nginx.html" />
     
-    <link rel="prev" href="python特有语法.md" />
+    
+    <link rel="prev" href="redis.html" />
     
 
     
@@ -364,7 +366,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.5.1" data-path="python特有语法.md">
+        <li class="chapter " data-level="1.5.1" data-path="../python/python特有语法.md">
             
                 <span>
             
@@ -377,9 +379,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.5.2" data-path="django.html">
+        <li class="chapter " data-level="1.5.2" data-path="../python/django.html">
             
-                <a href="django.html">
+                <a href="../python/django.html">
             
                     
                     django
@@ -441,9 +443,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.7.1" data-path="../middlewares/redis.html">
+        <li class="chapter " data-level="1.7.1" data-path="redis.html">
             
-                <a href="../middlewares/redis.html">
+                <a href="redis.html">
             
                     
                     redis
@@ -454,9 +456,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7.2" data-path="../middlewares/zookeeper.html">
+        <li class="chapter active" data-level="1.7.2" data-path="zookeeper.html">
             
-                <a href="../middlewares/zookeeper.html">
+                <a href="zookeeper.html">
             
                     
                     zookeeper
@@ -467,9 +469,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7.3" data-path="../middlewares/nginx.html">
+        <li class="chapter " data-level="1.7.3" data-path="nginx.html">
             
-                <a href="../middlewares/nginx.html">
+                <a href="nginx.html">
             
                     
                     nginx
@@ -480,9 +482,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7.4" data-path="../middlewares/kafka.html">
+        <li class="chapter " data-level="1.7.4" data-path="kafka.html">
             
-                <a href="../middlewares/kafka.html">
+                <a href="kafka.html">
             
                     
                     kafka
@@ -599,7 +601,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >django</a>
+        <a href=".." >zookeeper</a>
     </h1>
 </div>
 
@@ -614,7 +616,27 @@
     
                                 <section class="normal markdown-section">
                                 
-                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><li><span class="title-icon "></span><a href="#&#x5DE5;&#x4F5C;&#x539F;&#x7406;"><b></b>&#x5DE5;&#x4F5C;&#x539F;&#x7406;</a></li><li><span class="title-icon "></span><a href="#&#x5E94;&#x7528;"><b></b>&#x5E94;&#x7528;</a></li><li><span class="title-icon "></span><a href="#&#x53C2;&#x8003;&#x6587;&#x7AE0;"><b></b>&#x53C2;&#x8003;&#x6587;&#x7AE0;</a></li></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h2 id="&#x5DE5;&#x4F5C;&#x539F;&#x7406;"><a name="&#x5DE5;&#x4F5C;&#x539F;&#x7406;" class="anchor-navigation-ex-anchor" href="#&#x5DE5;&#x4F5C;&#x539F;&#x7406;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x5DE5;&#x4F5C;&#x539F;&#x7406;" class="plugin-anchor" href="#&#x5DE5;&#x4F5C;&#x539F;&#x7406;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5DE5;&#x4F5C;&#x539F;&#x7406;</h2>
+<p>&#x672C;&#x8D28;&#x4E0A;&#x662F;&#x4E00;&#x4E2A;CS&#x5E94;&#x7528;&#xFF0C;&#x901A;&#x5E38;&#x6240;&#x8BF4;&#x7684;zookeeper&#x662F;&#x6307;Server&#xFF0C;&#x53EF;&#x4EE5;&#x5728;zookeeper&#x7684;&#x8282;&#x70B9;&#x4E0A;&#x6CE8;&#x518C;&#x4E8B;&#x4EF6;&#x5373;Watcher&#xFF0C;&#x5F53;&#x4E8B;&#x4EF6;&#x53D1;&#x751F;&#x65F6;&#x53EF;&#x4EE5;&#x901A;&#x77E5;&#x5230;&#x8BA2;&#x9605;&#x4E86;&#x8BE5;&#x4E8B;&#x4EF6;&#x7684;&#x5BA2;&#x6237;&#x7AEF;&#xFF0C;&#x89C2;&#x5BDF;&#x8005;&#x6A21;&#x5F0F;&#x3002;&#x5F53;&#x5BA2;&#x6237;&#x7AEF;&#x8FDE;&#x63A5;&#x5230;Server&#x540E;&#xFF0C;&#x4F1A;&#x5B9A;&#x65F6;&#x53D1;&#x9001;&#x5FC3;&#x8DF3;&#xFF0C;&#x5F53;Server&#x68C0;&#x6D4B;&#x4E0D;&#x5230;&#x5FC3;&#x8DF3;&#x65F6;&#xFF0C;&#x5C31;&#x4F1A;&#x5220;&#x9664;&#x5BF9;&#x5E94;&#x7684;&#x8282;&#x70B9;&#xFF0C;&#x4ECE;&#x800C;&#x611F;&#x5E94;&#x5230;&#x8282;&#x70B9;&#x4E0B;&#x7EBF;&#xFF0C;&#x89E6;&#x53D1;&#x76F8;&#x5E94;&#x4E8B;&#x4EF6;&#xFF0C;&#x901A;&#x77E5;&#x5230;&#x76F8;&#x5173;&#x7684;&#x5BA2;&#x6237;&#x7AEF;&#x3002;</p>
+<h2 id="&#x5E94;&#x7528;"><a name="&#x5E94;&#x7528;" class="anchor-navigation-ex-anchor" href="#&#x5E94;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x5E94;&#x7528;" class="plugin-anchor" href="#&#x5E94;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5E94;&#x7528;</h2>
+<ul>
+<li><p>&#x5206;&#x5E03;&#x5F0F;&#x534F;&#x8C03;&#x670D;&#x52A1;
+&#x68C0;&#x6D4B;&#x96C6;&#x7FA4;&#x72B6;&#x6001;&#xFF0C;&#x77E5;&#x9053;&#x96C6;&#x7FA4;&#x4E2D;&#x54EA;&#x4E9B;&#x673A;&#x5668;&#x5B58;&#x6D3B;&#x54EA;&#x4E9B;&#x5931;&#x6548;</p>
+</li>
+<li><p>&#x53D1;&#x5E03;&#x8BA2;&#x9605;&#xFF08;&#x914D;&#x7F6E;&#x4E2D;&#x5FC3;&#xFF09;
+&#x7528;zk&#x5B58;&#x50A8;&#x914D;&#x7F6E;&#xFF0C;&#x76F8;&#x5E94;&#x7684;&#x670D;&#x52A1;&#x4ECE;zk&#x53D6;&#x914D;&#x7F6E;&#xFF0C;&#x5E76;&#x8BA2;&#x9605;&#x914D;&#x7F6E;&#x53D8;&#x5316;&#xFF0C;&#x5F53;&#x914D;&#x7F6E;&#x53D1;&#x751F;&#x53D8;&#x5316;&#x65F6;zk&#x53EF;&#x4EE5;&#x4E3B;&#x52A8;&#x901A;&#x77E5;&#x5404;&#x4E2A;&#x670D;&#x52A1;&#xFF0C;&#x4F7F;&#x670D;&#x52A1;&#x66F4;&#x65B0;&#x914D;&#x7F6E;</p>
+</li>
+<li><p>&#x76EE;&#x5F55;&#x670D;&#x52A1;</p>
+</li>
+<li><p>&#x5206;&#x5E03;&#x5F0F;&#x9501;</p>
+</li>
+<li><p>&#x96C6;&#x7FA4;&#x9009;&#x4E3E;
+&#x96C6;&#x7FA4;&#x5185;&#x7684;&#x591A;&#x53F0;&#x673A;&#x5668;&#x540C;&#x65F6;&#x521B;&#x5EFA;&#x67D0;&#x4E2A;&#x8282;&#x70B9;&#xFF0C;zk&#x80FD;&#x4FDD;&#x8BC1;&#x53EA;&#x6709;&#x4E00;&#x53F0;&#x673A;&#x5668;&#x80FD;&#x6210;&#x529F;&#xFF0C;&#x6B64;&#x65F6;&#x6210;&#x529F;&#x7684;&#x673A;&#x5668;&#x5C31;&#x65F6;leader&#xFF0C;&#x5176;&#x4ED6;&#x5931;&#x8D25;&#x7684;&#x673A;&#x5668;&#x53EF;&#x4EE5;&#x76D1;&#x542C;&#x521B;&#x5EFA;&#x7684;&#x8282;&#x70B9;&#xFF0C;&#x5F53;&#x8282;&#x70B9;&#x5931;&#x6548;&#x65F6;&#xFF0C;zk&#x4F1A;&#x901A;&#x77E5;&#x5230;&#x5176;&#x4ED6;&#x673A;&#x5668;&#xFF0C;&#x91CD;&#x65B0;&#x8FDB;&#x884C;&#x9009;&#x4E3E;&#x3002;&#x5178;&#x578B;&#x5E94;&#x7528;&#x6709;hdfs namenode&#x548C;yarn resource manager&#x7684;ha&#xFF08;&#x9AD8;&#x53EF;&#x7528;&#xFF09;</p>
+</li>
+</ul>
+<h2 id="&#x53C2;&#x8003;&#x6587;&#x7AE0;"><a name="&#x53C2;&#x8003;&#x6587;&#x7AE0;" class="anchor-navigation-ex-anchor" href="#&#x53C2;&#x8003;&#x6587;&#x7AE0;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x53C2;&#x8003;&#x6587;&#x7AE0;" class="plugin-anchor" href="#&#x53C2;&#x8003;&#x6587;&#x7AE0;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53C2;&#x8003;&#x6587;&#x7AE0;</h2>
+<p><a href="https://blog.csdn.net/qiangcuo6087/article/details/79042035" target="_blank">https://blog.csdn.net/qiangcuo6087/article/details/79042035</a></p>
+
                                 
                                 </section>
                             
@@ -641,10 +663,14 @@
 
             
                 
-                <a href="python特有语法.md" class="navigation navigation-prev navigation-unique" aria-label="Previous page: python特有语法">
+                <a href="redis.html" class="navigation navigation-prev " aria-label="Previous page: redis">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="nginx.html" class="navigation navigation-next " aria-label="Next page: nginx">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -653,7 +679,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"django","level":"1.5.2","depth":2,"next":{"title":"go","level":"1.6","depth":1,"ref":"","articles":[{"title":"golang特有语法","level":"1.6.1","depth":2,"path":"go/golang特有语法.md","ref":"go/golang特有语法.md","articles":[]}]},"previous":{"title":"python特有语法","level":"1.5.1","depth":2,"path":"python/python特有语法.md","ref":"python/python特有语法.md","articles":[]},"dir":"neutral"},"config":{"plugins":["-sharing","splitter","copy-code-button","expandable-chapters","expandable-chapters-small","atoc","anchors","github","github-buttons","donate","sharing-plus","anchor-navigation-ex","favicon","back-to-top-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/jinfanx/notes"},"atoc":{},"splitter":{},"search":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"title":" ","button":"Donate","wechat":"","alipay":"/resources/images/donate/alipay.jpg","wechatText":" ","alipayText":" "},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"showLevel":false,"associatedWithSummary":true,"mode":"float","showGoTop":true,"printLog":false,"multipleH1":true,"float":{"floatIcon":"fa fa-navicon","showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""},"pageTop":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""}},"favicon":{},"back-to-top-button":{},"github-buttons":{},"expandable-chapters-small":{},"copy-code-button":{},"sharing":{"qq":false,"all":["google","facebook","weibo","twitter","qq","qzone","linkedin","pocket"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"expandable-chapters":{}},"theme":"default","author":"jinfanx","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"编程笔记","language":"zh-hans","gitbook":"3.2.3","description":"一只程序狗的工作、学习笔记"},"file":{"path":"python/django.md","mtime":"2020-11-21T08:46:36.125Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-11-21T09:05:26.754Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"zookeeper","level":"1.7.2","depth":2,"next":{"title":"nginx","level":"1.7.3","depth":2,"path":"middlewares/nginx.md","ref":"middlewares/nginx.md","articles":[]},"previous":{"title":"redis","level":"1.7.1","depth":2,"path":"middlewares/redis.md","ref":"middlewares/redis.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","copy-code-button","expandable-chapters","expandable-chapters-small","atoc","anchors","github","github-buttons","donate","sharing-plus","anchor-navigation-ex","favicon","back-to-top-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/jinfanx/notes"},"atoc":{},"splitter":{},"search":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"title":" ","button":"Donate","wechat":"","alipay":"/resources/images/donate/alipay.jpg","wechatText":" ","alipayText":" "},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"showLevel":false,"associatedWithSummary":true,"mode":"float","showGoTop":true,"printLog":false,"multipleH1":true,"float":{"floatIcon":"fa fa-navicon","showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""},"pageTop":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""}},"favicon":{},"back-to-top-button":{},"github-buttons":{},"expandable-chapters-small":{},"copy-code-button":{},"sharing":{"qq":false,"all":["google","facebook","weibo","twitter","qq","qzone","linkedin","pocket"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"expandable-chapters":{}},"theme":"default","author":"jinfanx","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"编程笔记","language":"zh-hans","gitbook":"3.2.3","description":"一只程序狗的工作、学习笔记"},"file":{"path":"middlewares/zookeeper.md","mtime":"2020-11-21T08:46:36.125Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-11-21T09:05:26.754Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
